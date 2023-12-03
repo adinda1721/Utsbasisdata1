@@ -1,0 +1,22 @@
+CREATE TABLE MATKUL (
+id INT PRIMARY KEY;
+title VARCHAR(50)
+);
+
+CREATE TABLE Mahasiswa (
+	id INT PRIMARY KEY;
+	nim VARCHAR(11);
+	f_name VARCHAR(50);
+	m_name VARCHAR(50);
+	l_name VARCHAR(50);
+	tittle FOREIGN AS MATKUL
+);
+
+CREATE TABLE Dosen(
+	id INT PRIMARY KEY,
+	nim VARCHAR(11);
+	f_name VARCHAR(50);
+	m_name VARCHAR(50);
+	l_name VARCHAR(50);
+	tittle FOREIGN AS MATKUL
+);
